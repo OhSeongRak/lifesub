@@ -1,8 +1,0 @@
-dependencies {
-    implementation project(':common')
-    implementation project(':mysub-biz')
-    runtimeOnly 'org.postgresql:postgresql'
-}
-bootJar {
-    archiveFileName = "mysub.jar"
-}

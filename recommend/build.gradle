@@ -1,7 +1,0 @@
-dependencies {
-    implementation project(':common')
-    runtimeOnly 'org.postgresql:postgresql'
-}
-bootJar {
-    archiveFileName = "recommend.jar"
-}
