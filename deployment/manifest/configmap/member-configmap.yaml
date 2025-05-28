@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: member-config
+  namespace: dg0408-lifesub-ns
+data:
+  POSTGRES_HOST: "postgres-member-postgresql"
+  POSTGRES_PORT: "5432"
+  POSTGRES_DB: "member"
