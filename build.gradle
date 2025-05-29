@@ -51,6 +51,9 @@ subprojects {
         // Lombok for Tests
         testCompileOnly 'org.projectlombok:lombok'
         testAnnotationProcessor 'org.projectlombok:lombok'
+	
+	// Actuator
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
     }
 
     // Test Configuration
