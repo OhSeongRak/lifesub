@@ -180,4 +180,17 @@ testcontainers.reuse.enable=true'''
                     echo "Waiting for deployments to be ready..."
                     kubectl -n ${namespace} wait --for=condition=available deployment/member --timeout=300s
                     kubectl -n ${namespace} wait --for=condition=available deployment/mysub --timeout=300s
-                    kub
+                    kubectl -n ${namespace} wait --for=condition=available deployment/recommend --timeout=300s
+                    
+                    echo "=========================================="
+                    echo "Backend services deployment completed!"
+                    echo "Access URLs:"
+                    echo "Member API: http://${props.ingress_host}/member"
+                    echo "Mysub API: http://${props.ingress_host}/mysub"
+                    echo "Recommend API: http://${props.ingress_host}/recommend"
+                    echo "=========================================="
+                """
+            }
+        }
+    }
+}
